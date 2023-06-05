@@ -1,0 +1,317 @@
+body{
+    background-color: #edf4ff;
+    margin: 0;
+}
+/* 
+   ······ Header ······ 
+*/
+.custom-navbar{
+    background-color: #88beee !important;
+}
+/* 
+    ······ Side Bar ······ 
+*/
+#side-nav {
+    transition: .2s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+    z-index: 998;
+    /* Behind the navbar */
+    padding: 58px 10px 10px 10px;
+    /* Height of navbar */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+    width: 200px;
+    background-color: #343a40 !important;
+    
+}
+
+.extend-nav{
+    transition: .5s !important;
+    left: 0 !important;
+}
+
+#nav-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#nav-container hr{
+    color: rgba(255, 255, 255, 0.822);
+}
+
+#dwnUsuario{
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 62.47);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+  }
+  
+  .dropdown-toggle { outline: 0; }
+  
+  .nav-flush .nav-link {
+    border-radius: 0;
+  }
+  
+  .btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.822) !important;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none !important;
+    gap: 4px !important;
+    width: 100%;
+  }
+
+  .btn-toggle:hover,
+  .btn-toggle:focus {
+    /* color: rgba(0, 0, 0, .85); */
+    background-color: #dbdbdb46;
+  }
+
+  .btn-toggle::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='none' stroke='rgba(239, 239, 239, 0.8)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/></svg>");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+  }
+  
+  .btn-toggle[aria-expanded="true"] {
+    color: rgba(255, 255, 255, 0.822) !important;
+  }
+  .btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+  }
+
+.btn-toggle-nav .sub-nav-link{
+    padding-left: 10px;
+}
+  
+  .btn-toggle-nav a {
+    display: inline-flex;
+    padding: 5px 0;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.822) !important;
+    width: 100%;
+    margin: 2px 0;
+  }
+
+  
+  .btn-toggle-nav a:hover,
+  .btn-toggle-nav a:focus {
+    background-color: #dbdbdb46;
+  }
+  
+  .scrollarea {
+    overflow-y: auto;
+  }
+  
+.fw-semibold { font-weight: 600; }
+.lh-tight { line-height: 1.25; }
+
+.navbar-brand {
+    width: 200px;
+    text-align: center;
+}
+
+.show-navbar{
+    transition: .5s !important;
+    left: 0 !important;
+}
+/* 
+    ······ Overlay side bar ······ 
+*/
+
+.sidenav-overlay {
+    transition: .2s !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 997;
+    display: none;
+}
+
+.active-overlay{
+    transition: .2s !important;
+    display: block;
+    opacity: 1;
+}
+
+/* 
+    ······ Contenido principal ······ 
+*/
+.main-container{
+    
+    
+}
+
+.margin-main{
+    margin-left: 200px !important;
+    transition: .2s !important;
+}
+/* 
+    ······ Modal Agregar Equipo ······ 
+*/
+
+#modal-gestionar-equipos .modal-dialog{
+    max-width: 650px !important;
+}
+#modal-gestionar-equipos .modal-footer{
+    justify-content: space-between;
+    
+}
+/* 
+    ······ Estilo LENGTH DATATABLES ······ 
+*/
+.dataTables_length label, .dataTables_filter label{
+    display: flex;
+}
+
+.dataTables_length select{
+    width: 70px;
+    height: 33px;
+    margin: 0 4px;
+    
+}
+
+/* 
+    ······ Estilo para Tablas ······ 
+*/
+table thead{
+    background-color: #309365;
+    color: white;
+}
+table thead tr th{
+    font-weight: 500 !important;
+}
+table tbody{
+    background-color: #30936534;
+}
+
+/* 
+    ······ Estilo para Selects ······ 
+*/
+select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+/* 
+    ······ Estilo de paginacion DataTables ······ 
+*/
+.dataTables_wrapper .dataTables_paginate .paginate_button .page-link{
+    color: #ffffff !important;
+    background-color: #0d6efd;
+}
+
+.page-item.disabled .page-link {
+    color: white;
+    background-color: #6aa4fc !important;
+    
+}
+
+.page-item.active .page-link {
+    border-bottom: 3px solid #0a58ca;
+}
+
+.page-link:focus {
+    z-index: 3;
+    color: none;
+    background-color: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.page-link:hover {
+    background-color: #0a58ca !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    outline: none;
+    background-color: none;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    border: none !important;
+    background: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .page-item{
+    padding: 0 !important;
+    padding-top: 5px !important;
+}
+
+.pagination{
+    justify-content: center;
+}
+
+/* 
+    ······ Estilo sweetalerts ······ 
+*/
+.swal2-actions{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+/* 
+    ······ Estilo para responsividad ······ 
+*/
+
+@media (max-width: 991px){
+    /* #side-nav{
+        transition: .2s;
+        left: -200px;
+    }
+
+    .main-container{
+        transition: .2s;
+        margin-left: 0 !important;
+    } */
+}
+
+@media (max-width: 767px){
+    .dataTables_length label, .dataTables_filter label{
+        display: flex;
+        justify-content: center;
+    }
+    .dataTables_length, .dataTables_filter{
+        float: none !important;
+        text-align: center;
+    }
+    .dataTables_filter{
+        margin-top: 0.5em;
+    }
+}
+@media (min-width: 992px){
+    /*Habilitar el boton del menu*/
+    .navbar-expand-lg .navbar-toggler{
+        display: inline-block !important;
+    }
+}
